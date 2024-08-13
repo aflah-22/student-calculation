@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    num1: <input type="number" id="num1">
+    num2: <input type="number" id="num2">
+    <button onclick="addTwoNumbers()">sum</button>
+    <h4 id="sum">:</h4>
+
+    <script>
+        function addTwoNumbers() {
+            var r1 = parseFloat(document.getElementById("num1").value);
+            var r2 = parseFloat(document.getElementById("num2").value);
+            var sum = r1 + r2;
+            console.log(sum);
+            document.getElementById("sum").innerText= "totel is:  " + sum
+        }
+    </script>
+</body>
+</html>
